@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Myntra - Fashion Store</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+
+    <header class="navbar">
+
+        <div class="logo">
+            MYNTRA
+        </div>
+
+        <nav>
+            <a href="#">MEN</a>
+            <a href="#">WOMEN</a>
+            <a href="#">KIDS</a>
+            <a href="#">HOME</a>
+            <a href="#">BEAUTY</a>
+            <a href="#">GENZ</a>
+        </nav>
+
+        <div class="search">
+            <input type="text" id="searchInput"
+                placeholder="Search for products, brands and more">
+        </div>
+
+        <div class="nav-icons">
+            <span>👤 Profile</span>
+            <span>♡ Wishlist</span>
+            <span>🛍 Bag (<b id="bagCount">0</b>)</span>
+        </div>
+
+    </header>
+
+
+    <!-- Promotional Banner -->
+
+    <section class="hero">
+
+        <div class="hero-content">
+
+            <h1>FASHION THAT DEFINES YOU</h1>
+
+            <p>Discover the latest trends and upgrade your style.</p>
+
+            <button onclick="scrollToProducts()">
+                SHOP NOW
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- Categories -->
+
+    <section class="categories">
+
+        <h2>SHOP BY CATEGORY</h2>
+
+        <div class="category-container">
+
+            <div class="category-card">
+                <img src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?w=400"
+                    alt="Women's Fashion">
+                <h3>Women's Fashion</h3>
+            </div>
+
+            <div class="category-card">
+                <img src="https://images.unsplash.com/photo-1516257984-b1b4d707412e?w=400"
+                    alt="Men's Fashion">
+                <h3>Men's Fashion</h3>
+            </div>
+
+            <div class="category-card">
+                <img src="https://images.unsplash.com/photo-1503919005314-30d93d07d823?w=400"
+                    alt="Footwear">
+                <h3>Footwear</h3>
+            </div>
+
+            <div class="category-card">
+                <img src="https://images.unsplash.com/photo-1529139574466-a303027c1d8b?w=400"
+                    alt="Accessories">
+                <h3>Accessories</h3>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Trending Products -->
+
+    <section class="products" id="products">
+
+        <h2>TRENDING NOW</h2>
+
+        <div class="product-container" id="productContainer">
+
+        </div>
+
+    </section>
+
+
+    <!-- Footer -->
+
+    <footer>
+
+        <h3>MYNTRA CLONE</h3>
+
+        <p>Fashion is what you buy. Style is what you do with it.</p>
+
+        <p>© 2026 Myntra Clone | Academic Project</p>
+
+    </footer>
+
+
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
