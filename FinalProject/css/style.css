@@ -233,3 +233,162 @@ footer {
 
 
 
+/* ========================= */
+/* RESPONSIVE DESIGN */
+/* ========================= */
+
+
+/* Tablet Screen */
+
+@media (max-width: 900px) {
+
+    .header {
+        flex-wrap: wrap;
+        padding: 15px;
+        gap: 15px;
+    }
+
+    .navbar {
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .search-box {
+        width: 100%;
+    }
+
+    .search-box input {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .categories {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .category-card {
+        width: 40%;
+    }
+
+    .banner {
+        padding: 80px 30px;
+    }
+
+}
+
+
+/* Mobile Screen */
+
+@media (max-width: 600px) {
+
+    /* Header */
+
+    .header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .logo {
+        font-size: 25px;
+    }
+
+    .navbar {
+        justify-content: center;
+    }
+
+    .navbar a {
+        font-size: 13px;
+    }
+
+    .header-icons {
+        justify-content: center;
+    }
+
+
+    /* Homepage Banner */
+
+    .banner {
+        padding: 60px 20px;
+        text-align: center;
+    }
+
+    .banner h1 {
+        font-size: 28px;
+    }
+
+    .banner p {
+        font-size: 14px;
+    }
+
+
+    /* Homepage Categories */
+
+    .categories {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .category-card {
+        width: 90%;
+    }
+
+
+    /* Products Page */
+
+    .products-heading h1 {
+        font-size: 25px;
+    }
+
+    .products-container {
+        padding: 15px;
+    }
+
+    .product-card {
+        width: 90%;
+    }
+
+
+    /* Wishlist Page */
+
+    .wishlist-heading h1 {
+        font-size: 25px;
+    }
+
+    .wishlist-container {
+        padding: 15px;
+    }
+
+    .wishlist-card {
+        width: 90%;
+    }
+
+
+    /* Shopping Bag */
+
+    .bag-heading h1 {
+        font-size: 25px;
+    }
+
+    .bag-container {
+        padding: 15px;
+    }
+
+    .bag-product {
+        width: 100%;
+    }
+
+    .price-summary {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+
+    /* Footer */
+
+    .footer {
+        text-align: center;
+        padding: 20px;
+    }
+
+}
