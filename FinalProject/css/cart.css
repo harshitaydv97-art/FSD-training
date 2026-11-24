@@ -1,0 +1,137 @@
+/* Shopping Bag Page */
+
+.bag-heading {
+    text-align: center;
+    padding: 35px 20px;
+}
+
+.bag-heading h1 {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.bag-heading p {
+    color: gray;
+}
+
+
+/* Bag Container */
+
+.bag-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+    padding: 20px 40px;
+}
+
+
+/* Bag Product */
+
+.bag-product {
+    display: flex;
+    gap: 20px;
+    width: 500px;
+    border: 1px solid #eeeeee;
+    padding: 15px;
+    margin-bottom: 15px;
+}
+
+.bag-product img {
+    width: 130px;
+    height: 170px;
+    object-fit: cover;
+}
+
+.bag-product-details h3 {
+    margin-bottom: 8px;
+}
+
+.bag-product-details p {
+    color: gray;
+    margin: 8px 0;
+}
+
+.bag-product-details h4 {
+    margin: 10px 0;
+}
+
+
+/* Remove Button */
+
+.remove-button {
+    background-color: white;
+    border: 1px solid #ff3f6c;
+    color: #ff3f6c;
+    padding: 7px 15px;
+    cursor: pointer;
+}
+
+
+/* Price Summary */
+
+.price-summary {
+    width: 300px;
+    border: 1px solid #eeeeee;
+    padding: 20px;
+    height: fit-content;
+}
+
+.price-summary h2 {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.price-row {
+    display: flex;
+    justify-content: space-between;
+    margin: 15px 0;
+    font-size: 15px;
+}
+
+.total-price {
+    font-weight: bold;
+    font-size: 17px;
+}
+
+
+/* Place Order Button */
+
+.order-button {
+    width: 100%;
+    background-color: #ff3f6c;
+    color: white;
+    border: none;
+    padding: 12px;
+    margin-top: 15px;
+    cursor: pointer;
+}
+
+.order-button:hover {
+    background-color: #e8325d;
+}
+
+
+/* Mobile Screen */
+
+@media (max-width: 600px) {
+
+    .bag-container {
+        padding: 15px;
+    }
+
+    .bag-product {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .bag-product img {
+        width: 100%;
+        height: 250px;
+    }
+
+    .price-summary {
+        width: 100%;
+    }
+
+}

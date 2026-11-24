@@ -5,121 +5,164 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Products | Myntra Clone</title>
+    <title>Myntra - Products</title>
 
-    <link rel="stylesheet" href="css/products.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 
-    <!-- Navbar -->
-    <header class="navbar">
+    <!-- Header Section -->
+    <header class="header">
 
-        <a href="index.html" class="logo">MYNTRA</a>
+        <div class="logo">
+            MYNTRA
+        </div>
 
-        <nav>
-            <a href="index.html">HOME</a>
-            <a href="products.html">MEN</a>
-            <a href="products.html">WOMEN</a>
-            <a href="products.html">KIDS</a>
+        <nav class="navbar">
+            <a href="index.html">Home</a>
+            <a href="products.html">Men</a>
+            <a href="products.html">Women</a>
+            <a href="products.html">Kids</a>
+            <a href="products.html">Beauty</a>
         </nav>
 
-        <input type="text" id="searchInput"
-            placeholder="Search for products and brands">
+        <div class="search-box">
+            <input type="text" placeholder="Search for products">
+        </div>
 
-        <div class="nav-links">
-            <a href="wishlist.html">♡ Wishlist</a>
-            <a href="bag.html">🛍 Bag (<span id="bagCount">0</span>)</a>
+        <div class="header-icons">
+            <a href="#">Profile</a>
+            <a href="wishlist.html">Wishlist</a>
+            <a href="bag.html">Bag</a>
         </div>
 
     </header>
 
 
     <!-- Page Heading -->
+    <section class="products-heading">
 
-    <section class="page-heading">
-
-        <h2>Fashion Collection</h2>
+        <h1>Fashion Collection</h1>
 
         <p>Explore the latest fashion trends</p>
 
     </section>
 
 
-    <!-- Filters -->
+    <!-- Products Section -->
+    <section class="products-container">
 
-    <section class="filter-section">
+        <!-- Product 1 -->
+        <div class="product-card">
 
-        <h3>Categories</h3>
+            <img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=500"
+                alt="Men T-shirt">
 
-        <div class="filter-buttons">
+            <h3>Roadster</h3>
 
-            <button class="filter-btn active" data-category="All">
-                All
-            </button>
+            <p>Men Regular Fit T-shirt</p>
 
-            <button class="filter-btn" data-category="Men">
-                Men
-            </button>
+            <h4>₹499</h4>
 
-            <button class="filter-btn" data-category="Women">
-                Women
-            </button>
-
-            <button class="filter-btn" data-category="Footwear">
-                Footwear
-            </button>
-
-            <button class="filter-btn" data-category="Accessories">
-                Accessories
-            </button>
+            <button>Add to Wishlist</button>
 
         </div>
 
-        <select id="sortSelect">
 
-            <option value="default">Sort By</option>
-            <option value="low">Price: Low to High</option>
-            <option value="high">Price: High to Low</option>
+        <!-- Product 2 -->
+        <div class="product-card">
 
-        </select>
+            <img src="https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?w=500"
+                alt="Women's top">
+
+            <h3>DressBerry</h3>
+
+            <p>Women Stylish Top</p>
+
+            <h4>₹799</h4>
+
+            <button>Add to Wishlist</button>
+
+        </div>
+
+
+        <!-- Product 3 -->
+        <div class="product-card">
+
+            <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=500"
+                alt="Sports shoes">
+
+            <h3>Puma</h3>
+
+            <p>Unisex Sports Shoes</p>
+
+            <h4>₹1,499</h4>
+
+            <button>Add to Wishlist</button>
+
+        </div>
+
+
+        <!-- Product 4 -->
+        <div class="product-card">
+
+            <img src="https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=500"
+                alt="Handbag">
+
+            <h3>Lavie</h3>
+
+            <p>Women Casual Handbag</p>
+
+            <h4>₹999</h4>
+
+            <button>Add to Wishlist</button>
+
+        </div>
+
+
+        <!-- Product 5 -->
+        <div class="product-card">
+
+            <img src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?w=500"
+                alt="Fashion dress">
+
+            <h3>Tokyo Talkies</h3>
+
+            <p>Women Casual Dress</p>
+
+            <h4>₹1,199</h4>
+
+            <button>Add to Wishlist</button>
+
+        </div>
+
+
+        <!-- Product 6 -->
+        <div class="product-card">
+
+            <img src="https://images.unsplash.com/photo-1523398002811-999ca8dec234?w=500"
+                alt="Men fashion">
+
+            <h3>HIGHLANDER</h3>
+
+            <p>Men Casual Shirt</p>
+
+            <h4>₹899</h4>
+
+            <button>Add to Wishlist</button>
+
+        </div>
 
     </section>
 
 
-    <!-- Products -->
-
-    <main class="products-section">
-
-        <div class="products-heading">
-
-            <h2>ALL PRODUCTS</h2>
-
-            <span id="productCount"></span>
-
-        </div>
-
-        <div class="product-container" id="productContainer">
-
-        </div>
-
-    </main>
-
-
     <!-- Footer -->
+    <footer class="footer">
 
-    <footer>
-
-        <h3>MYNTRA CLONE</h3>
-
-        <p>Your Style, Your Fashion, Your Choice.</p>
-
-        <p>© 2026 Myntra Clone | Academic Project</p>
+        <p>© 2026 Myntra Clone | Created for FSD Project</p>
 
     </footer>
-
-
-    <script src="js/products.js"></script>
 
 </body>
 
