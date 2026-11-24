@@ -2,60 +2,73 @@
 <html lang="en">
 
 <head>
+
     <meta charset="UTF-8">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Myntra - Fashion Store</title>
+    <title>Myntra Clone</title>
 
     <link rel="stylesheet" href="css/style.css">
+
 </head>
 
 <body>
 
     <!-- Navigation Bar -->
 
-    <header class="navbar">
+    <header>
 
         <div class="logo">
             MYNTRA
         </div>
 
         <nav>
-            <a href="#">MEN</a>
-            <a href="#">WOMEN</a>
-            <a href="#">KIDS</a>
-            <a href="#">HOME</a>
-            <a href="#">BEAUTY</a>
-            <a href="#">GENZ</a>
+
+            <a href="index.html">HOME</a>
+
+            <a href="products.html">MEN</a>
+
+            <a href="products.html">WOMEN</a>
+
+            <a href="products.html">KIDS</a>
+
+            <a href="products.html">BEAUTY</a>
+
         </nav>
 
         <div class="search">
-            <input type="text" id="searchInput"
-                placeholder="Search for products, brands and more">
+
+            <input type="text" placeholder="Search for products">
+
         </div>
 
-        <div class="nav-icons">
-            <span>👤 Profile</span>
-            <span>♡ Wishlist</span>
-            <span>🛍 Bag (<b id="bagCount">0</b>)</span>
+        <div class="icons">
+
+            <a href="#">Profile</a>
+
+            <a href="wishlist.html">Wishlist</a>
+
+            <a href="bag.html">Bag</a>
+
         </div>
 
     </header>
 
 
-    <!-- Promotional Banner -->
+    <!-- Main Banner -->
 
-    <section class="hero">
+    <section class="banner">
 
-        <div class="hero-content">
+        <div class="banner-text">
 
             <h1>FASHION THAT DEFINES YOU</h1>
 
             <p>Discover the latest trends and upgrade your style.</p>
 
-            <button onclick="scrollToProducts()">
+            <a href="products.html" class="shop-button">
                 SHOP NOW
-            </button>
+            </a>
 
         </div>
 
@@ -70,28 +83,51 @@
 
         <div class="category-container">
 
-            <div class="category-card">
-                <img src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?w=400"
+            <div class="category">
+
+                <img src="https://images.unsplash.com/photo-1483985988355-763728e1935b?w=400"
                     alt="Women's Fashion">
-                <h3>Women's Fashion</h3>
+
+                <h3>WOMEN</h3>
+
+                <a href="products.html">Explore Now</a>
+
             </div>
 
-            <div class="category-card">
+
+            <div class="category">
+
                 <img src="https://images.unsplash.com/photo-1516257984-b1b4d707412e?w=400"
                     alt="Men's Fashion">
-                <h3>Men's Fashion</h3>
+
+                <h3>MEN</h3>
+
+                <a href="products.html">Explore Now</a>
+
             </div>
 
-            <div class="category-card">
+
+            <div class="category">
+
                 <img src="https://images.unsplash.com/photo-1503919005314-30d93d07d823?w=400"
                     alt="Footwear">
-                <h3>Footwear</h3>
+
+                <h3>FOOTWEAR</h3>
+
+                <a href="products.html">Explore Now</a>
+
             </div>
 
-            <div class="category-card">
+
+            <div class="category">
+
                 <img src="https://images.unsplash.com/photo-1529139574466-a303027c1d8b?w=400"
-                    alt="Accessories">
-                <h3>Accessories</h3>
+                    alt="Fashion Accessories">
+
+                <h3>ACCESSORIES</h3>
+
+                <a href="products.html">Explore Now</a>
+
             </div>
 
         </div>
@@ -99,15 +135,17 @@
     </section>
 
 
-    <!-- Trending Products -->
+    <!-- Trending Section -->
 
-    <section class="products" id="products">
+    <section class="trending">
 
-        <h2>TRENDING NOW</h2>
+        <h2>TRENDING COLLECTION</h2>
 
-        <div class="product-container" id="productContainer">
+        <p>Find your favourite fashion styles.</p>
 
-        </div>
+        <a href="products.html" class="shop-button">
+            VIEW COLLECTION
+        </a>
 
     </section>
 
@@ -123,9 +161,6 @@
         <p>© 2026 Myntra Clone | Academic Project</p>
 
     </footer>
-
-
-    <script src="js/script.js"></script>
 
 </body>
 
